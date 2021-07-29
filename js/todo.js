@@ -29,12 +29,16 @@ function paintToDo(newToDo){    //newToDo Object (newToDoObj)를 argument로 줘
     li.id = newToDo.id; //li의 id와 newToDo 오브젝트의 id를 갖게 함 (그래서 어떤 li가 어떤 걸 가지고 있는지 알 수 있게)
     const span = document.createElement("span");    //span으로 내용을 채움
     span.innerText = newToDo.text;   //그리고 이 span 안에 newToDo.text(값,앞으로 할 것) 이 들어감
-    const button = document.createElement("button");    //button도 만들어줌 (span의 내용을 지울 용도)
-    button.innerText = "🗑";
+    const button_2 = document.createElement("button");
+    button_2.innerText = "✔";
+    const button_1 = document.createElement("button");    //button도 만들어줌 (span의 내용을 지울 용도)
+    button_1.innerText = "🗑";
 
-    button.addEventListener("click", deleteToDo);       //클릭하면 deleteToDo 실행
+    button_1.addEventListener("click", deleteToDo);       //클릭하면 deleteToDo 실행
+    button_2.addEventListener("click", deleteToDo);
     li.appendChild(span);   //li 안에 span이 들어감
-    li.appendChild(button); //button도 넣어줌
+    li.appendChild(button_2);
+    li.appendChild(button_1); //button도 넣어줌
     toDoList.appendChild(li);   //todoList 안에 li을 넣음
 }
 
