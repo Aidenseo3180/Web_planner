@@ -1,0 +1,114 @@
+body, html {
+    font-family: Segoe UI, Segoe UI Midlevel, Segoe WP, Arial, Sans-Serif;
+    font-size : 20px;
+    font-weight : bold;
+    margin: 0;
+    padding : 0;
+    height: 95%;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hidden{
+    display : none;
+}
+
+
+.container{
+    width : 400px;
+    height : 752px;
+    background-color : rgb(48, 44, 44);
+    display:flex;
+    justify-content: left;
+    text-align: center;
+    flex-flow: column wrap;
+    outline-style : solid;
+    outline-width : thick;
+    opacity: 1;
+    box-shadow: 10px 3px black;
+    opacity : 0.8;
+}
+
+#time{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size : 20px;
+    font-family :fantasy;
+    text-decoration: underline;
+}
+
+#date
+
+.flex_item{
+    justify-content: space-around;
+    outline-style: solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(48, 44, 44);
+    transition : background-color .5s ease-in-out;
+}
+
+.flex_item:hover{
+    background-color: goldenrod;
+    transition: background-color .5s ease-in-out;
+}
+
+.form_class{
+    font-family: inherit;
+    width: 70%;
+    border: 0;
+    border-bottom: 2px solid rgba(245, 245, 245, 0.596);
+    outline: 0;
+    font-size: 1rem;
+    color: rgba(148, 15, 148, 0.527);
+    padding: 7px 0;
+    transition: border-color 0.2s;
+    background: transparent;
+
+}
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: rgb(48, 44, 44);
+}  
+
+#greeting{
+    font-size : 20px;
+}
+
+ul {
+    overflow: auto;
+}
+
+li{
+    list-style: circle;
+    font-size : 20px;
+    text-align : center;
+
+}
+
+ul li:nth-of-type(1n+6) {
+    display: none;
+}
+
+button{
+    background-color : transparent;
+    border : none;
+    font-size : 20px;
+    /*add float : right*/
+}
+
+#weather{
+    padding-bottom : 20px;
+}
+
+img{
+    width: 100%;
+    height: 80%;
+    object-fit : cover;
+}

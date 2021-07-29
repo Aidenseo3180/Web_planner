@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="time" class="flex_item">
+            <h2 id="clock">00:00:00</h2><br>
+            <h4 id="date"></h4>
+        </div>
+        <div class="flex_item">
+            <form id="login-form" class="hidden">
+                <!--form, h1 둘다 먼저 숨기고 시작함!-->
+                <input class="form_class" type="input" maxlength="15" placeholder="What is your name?" id="userName"
+                    required />
+                <label for="userName" class="form_label"></label>
+                <!--<button>Log In</button>-->
+            </form>
+        </div>
+
+        <div class="flex_item">
+            <h1 id="greeting" class="hidden"></h1>
+            <!--greeting도 숨겨놈-->
+        </div>
+
+        <div class="flex_item">
+            <form id="todo-form">
+                <input class="form_class" id="todo_name" type="input" placeholder="What is your plan today?" required />
+                <label for="todo_name" class="form__label"></label>
+            </form>
+
+            <ul id="todo-list"></ul>
+            <!--JS에서 <li>
+                <span></span>       <- 이 span 안에 todo.js가 들어가는거
+            </li>를 받을거임. span을 사용하는 이유는 이 ul에 button같은것들도 들어갈 거라서-->
+        </div>
+
+        <div id="quote" class="flex_item">
+            <span></span>
+            <br>
+            <!--JS에서 받음-->
+            <span></span>
+        </div>
+
+        <div id="weather" class="flex_item">
+            <span></span><br>
+            <!--city-->
+            <span></span><br>
+            <!--weather-->
+            <span></span>
+            <!--temp-->
+        </div>
+
+
+
+
+    </div>
+    <script src="js/quotes.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
