@@ -1,2 +1,3 @@
 # Web_planner
-Website with To-do list
+Webpage with To-do list  
+Chrome & Microsoft Edge Recommended as Browser
