@@ -1,4 +1,4 @@
-# Web_planner
+# web_planner
 About
 -----
 * Webpage with To-do list  
