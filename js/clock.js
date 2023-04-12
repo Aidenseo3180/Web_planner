@@ -1,9 +1,8 @@
-const clock = document.querySelector("#clock"); //id가 clock걸 찾음
-const currentDate = document.querySelector("#date"); //이건 <h4 id = date>을 위한것
-
+const clock = document.querySelector("#clock");
+const currentDate = document.querySelector("#date");
 function getDate(){
     const date = new Date();
-    const hours = String(date.getHours()).padStart(2,"0") ; //String으로 형변환, 01, 02, ...
+    const hours = String(date.getHours()).padStart(2,"0") ; //01, 02, ...
     const minutes = String(date.getMinutes()).padStart(2,"0");  //01,02...
     const seconds = String(date.getSeconds()).padStart(2,"0");  //01,02...
     clock.innerText = `${hours}:${minutes}:${seconds}`;
@@ -16,5 +15,5 @@ function getDate(){
 
 }
 
-getDate();  //맨 처음에 웹사이트 로드되자마자 부름
-setInterval(getDate, 1000); //그리고 계속 1초마다 getDate부름 (1초마다 업데이트)
+getDate(); 
+setInterval(getDate, 1000); 
