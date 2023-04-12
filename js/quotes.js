@@ -49,12 +49,11 @@ const quotes = [
     author:"Robert Frost",
 }];
 
-const quote_ = document.querySelector("#quote span:first-child");   //명언 (1번째 span)
-const author_ = document.querySelector("#quote span:last-child");   //author (2번째 span)
+const quote_ = document.querySelector("#quote span:first-child");  
+const author_ = document.querySelector("#quote span:last-child");  
 
-const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)];   //0~16 random number (floor때문에 0~15까지)
+const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)];  
 
 quote_.innerText = todaysQuote.quotes;   
-//todaysQuote (즉 랜덤으로 설정된 곳에 가서 quotes와 author을 부름)
 author_.innerText = `- ${todaysQuote.author}`;
 
